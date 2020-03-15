@@ -18,12 +18,12 @@ public class GreetingController {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/greet2")
     public String greet(String name) {
         return greetingService.greet(name);
     }
 
-    @RequestMapping(value = "hello2")
+    @RequestMapping(value = "/greet")
     public String hello2(String name) {
         return helloService.sayHello(name);
     }

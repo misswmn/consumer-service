@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrix
 @EnableFeignClients
 @SpringBootApplication
-public class DemoApplication {
+public class ConsumerApplication {
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {
@@ -21,7 +21,7 @@ public class DemoApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(ConsumerApplication.class, args);
     }
 
 
