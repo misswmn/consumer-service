@@ -3,9 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 9001
-  application:
-    name: consumer-service
+  port: 9002
   http:
     encoding:
       charset: UTF-8
@@ -18,3 +16,7 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+spring:
+  application:
+    name: consumer-service

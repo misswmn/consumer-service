@@ -19,7 +19,7 @@ public class GreetingController {
     @Autowired
     private HelloService helloService;
 
-    @Value("${defaultName}")
+//    @Value("${defaultName:张三}")
     private String defaultName;
 
     @Value("${server.port}")
